@@ -1,0 +1,146 @@
+I HAVE ATTACHED THE LATEST BACKEND WITH YOU.
+
+HELP ME CREATE THE FRONTEND AND CONENCT BACKEND WITH FRONTEND!!! KEEP THE FRONTEND THEME SAME THAT IS PRESENT. FOR ADMIN PART (OWNER OF TOOL) THEME IS KINDA RED, FOR COMPANY PART THEME IS KINDA BLUE-PURPLE AND FOR EMPLOYEE PART THEME IS KINDA GREEN WITH GRADIENTSS
+
+
+KEEP FOLLOWING THAT THEME AND MAKE THE FRONTEND PAGES AND INTEGRATE THEM WITH PROPER BACKEND AND FETCH REAL DATA!!!!
+
+THIS IS THE CURRENT FOLDER STRUCTURE!!!
+
+
+START BY CREATING UPDATED FOLDER STRUCTURE!! THEN TAKE MY APPROVAL BEFORE MAKING FILES. USE PROPER STRUCTURE WITH GOOD FILE NAMES AND THE REST YOU KNOW. THE CURRENT FRONTEND IS NOT UP TO DATE WITH THE CURRENT BACKEND!
+
+I NEED A PROPER FRONTEND FOLDER STRUCTURE BUT THAT SHOULD NOT BE TOO COMPLEX FROM THE BEGINNING RIGHT??? JUST KEEP ESSENTIAL THINGS, FOLLOW THE FOLDER/FOLDER/FILES KINDA PATTERN, MAKE COMPONENTS, BUT DON'T OVERCOMPLICATE WITH CONTEXT AND OTHER SHIT
+
+
+ALSO, THE SIGNUP PROCESS  FOR A COMPANY IS LONG AS SPECIFIED IN THE CURRENT STRUCTURE!! ALL I WANT IS PROPER COMPONENTS FOR EVERYTHING, AND PROPER CALLING OF THOSE COMPONENTS. BECAUSE I'VE UPDATED THE BACKEND, I WANT THE FRONTEND TO FETCH DATA ACCORDINGLY.
+
+
+USE TAILWINDCSS ONLY AND MAKE SURE TO KEEP THE UI AND THEME INTACT! USE ALL THE BACKEND THAT I'VE GIVEN TO YOU AND USING THE EXISTING FRONTEND, MODIFY THE FRONTEND, UPDATE IT, ADD NEW COMPONENTS AND FOLDERS. JUST DON'T USE ANY HOOKS, CONSTANTS, CONTEXTS ETC. BECAUSE WE DON'T WANT THAT YET. ALSO, DON'T MAKE A CONSTANT FILE FOR THEME AND COLORS, USE PROPER RED PURPLE AND GREEN GRADIENTS AS USED IN THE FRONTEND FOR ADMIN, COMPANY AND EMPLOYEE RESPECTIVELY! JUST MAKE A SEXY LOOKING FOLDER STRUCTURE FIRST AND GET MY APPROVAL, THEN WE WILL CREATE FILES. ALSO, TRY TO SAVE YOUR TOKEN AS MUCH AS POSSIBLE!
+
+
+IF POSSIBLE, KEEP THE CURRENT FOLDER STRUCTURE FOR FRONTEND AND JUST ADD NEW FILES AND FOLDERS. LIKE, MY TEAM HAS WORKED ON THIS SO, I WANT CHANGES BUT NOT ENTIRELY NEW THINGS OUT OF NOWWHERE BECAUSE ITS THERE EFFORTS!!! LIKE, I WANT A STRUCTURED FOLDER, BUT YOU CAN STILL SEE HOW THEY WERE GOING FORWARD RIGHT?? JUST USING THAT AS A BASE, WE CAN MOVE AHEAD!! AND MAKE COMPONENTS, COMPONENTS ARE EASY TO MANAGE
+
+
+```
+Getmax-wfm
+├─ backend
+│  ├─ .env
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ server.js
+│  └─ src
+│     ├─ app.js
+│     ├─ config
+│     │  ├─ cloudinary.config.js
+│     │  ├─ connection.config.js
+│     │  ├─ email.config.js
+│     │  └─ multer.config.js
+│     ├─ constants.js
+│     ├─ controllers
+│     │  ├─ admin
+│     │  │  └─ adminController.controller.js
+│     │  ├─ company
+│     │  │  ├─ companyController.controller.js
+│     │  │  └─ orgController.controller.js
+│     │  └─ employee
+│     │     └─ empolyeeController.controller.js
+│     ├─ middlewares
+│     │  ├─ auth.middleware.js
+│     │  ├─ error.middleware.js
+│     │  └─ upload.middleware.js
+│     ├─ models
+│     │  ├─ client.model.js
+│     │  ├─ company.model.js
+│     │  ├─ department.model.js
+│     │  ├─ designation.model.js
+│     │  ├─ employee.model.js
+│     │  ├─ gamification.model.js
+│     │  ├─ performance.model.js
+│     │  ├─ role.model.js
+│     │  └─ subdepartment.model.js
+│     ├─ routes
+│     │  ├─ admin.route.js
+│     │  ├─ company.route.js
+│     │  ├─ employee.route.js
+│     │  └─ index.route.js
+│     ├─ services
+│     │  └─ emailService.service.js
+│     └─ utils
+│        ├─ ApiError.js
+│        ├─ ApiResponse.js
+│        ├─ asyncHandler.js
+│        ├─ helpers.js
+│        └─ jwtHelper.js
+├─ frontend
+│  ├─ eslint.config.js
+│  ├─ index.html
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ public
+│  │  └─ vite.svg
+│  ├─ README.md
+│  ├─ src
+│  │  ├─ App.jsx
+│  │  ├─ components
+│  │  │  ├─ claims
+│  │  │  │  ├─ AllocationRulesTab.jsx
+│  │  │  │  └─ UploadIntakeTab.jsx
+│  │  │  ├─ dashboard
+│  │  │  │  ├─ ClaimSlaChart.jsx
+│  │  │  │  ├─ EmployeeProductivityChart.jsx
+│  │  │  │  ├─ GamificationFeedTile.jsx
+│  │  │  │  ├─ ModuleHealthTile.jsx
+│  │  │  │  ├─ PendingTasksTile.jsx
+│  │  │  │  ├─ StatCard.jsx
+│  │  │  │  └─ SystemAlertsTile.jsx
+│  │  │  ├─ forms
+│  │  │  │  ├─ InputField.jsx
+│  │  │  │  └─ SelectField.jsx
+│  │  │  ├─ layout
+│  │  │  │  ├─ DashboardLayout.jsx
+│  │  │  │  ├─ Header.jsx
+│  │  │  │  ├─ HomeLayout.jsx
+│  │  │  │  ├─ Navbar.jsx
+│  │  │  │  └─ Sidebar.jsx
+│  │  │  └─ ui
+│  │  │     ├─ button.jsx
+│  │  │     └─ card.jsx
+│  │  ├─ index.css
+│  │  ├─ lib
+│  │  │  └─ utils.js
+│  │  ├─ main.jsx
+│  │  └─ pages
+│  │     ├─ admin
+│  │     │  ├─ AdminDashboard.jsx
+│  │     │  ├─ CompanyManagement.jsx
+│  │     │  ├─ DetailedCompany.jsx
+│  │     │  ├─ EmployeeFilterAdmin.jsx
+│  │     │  ├─ EmployeeManagementAdmin.jsx
+│  │     │  └─ ShowCompany.jsx
+│  │     ├─ auth
+│  │     │  ├─ AdminLogin.jsx
+│  │     │  ├─ CompanyLogin.jsx
+│  │     │  ├─ CompanySignup.jsx
+│  │     │  ├─ EmployeeLogin.jsx
+│  │     │  ├─ LoginModal.jsx
+│  │     │  ├─ signup
+│  │     │  │  ├─ companySignup.jsx
+│  │     │  │  ├─ signupStep1.jsx
+│  │     │  │  ├─ signupStep2.jsx
+│  │     │  │  └─ signupStep3.jsx
+│  │     │  └─ SignupModal.jsx
+│  │     ├─ ClaimIntake.jsx
+│  │     ├─ ClientManagement.jsx
+│  │     ├─ company
+│  │     │  ├─ CompanyDashboard.jsx
+│  │     │  └─ EmployeeDashboard.jsx
+│  │     ├─ employee
+│  │     │  ├─ EmployeeFilter.jsx
+│  │     │  ├─ EmployeeManagement.jsx
+│  │     │  └─ EmployeeProfile.jsx
+│  │     └─ HomePage.jsx
+│  └─ vite.config.js
+└─ README.md
+
+```

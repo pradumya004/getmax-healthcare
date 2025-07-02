@@ -1,0 +1,19 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ignore": [
+        "node_modules/**",
+        "**/*.d.ts",
+        "**/*.log",
+        ".git/**",
+        ".env",
+        "logs/**",
+        "public/**",
+        "tmp/**",
+        "coverage/**"
+    ],
+    "ext": "js,json",
+    "legacyWatch": true,
+    "delay": 500
+}
