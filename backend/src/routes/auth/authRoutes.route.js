@@ -33,15 +33,13 @@ const router = express.Router();
 
 // Public routes
 router.post('/register',
-    generalLimiter,
-    validateRegistration,
+    // generalLimiter,
     registerUser
 );
 
 router.post('/login',
-    authLimiter,
-    validateLogin,
-    logActivity('login'),
+    // authLimiter,
+    // logActivity('login'),
     loginUser
 );
 
@@ -66,7 +64,7 @@ router.post('/verify-email',
 router.use(protect); // All routes below require authentication
 
 router.get('/me',
-    logActivity('profile_view'),
+    // logActivity('profile_view'),
     getCurrentUser
 );
 

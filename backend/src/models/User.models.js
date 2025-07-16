@@ -41,8 +41,7 @@ const userSchema = new mongoose.Schema({
     // Profile Information
     phone: {
         type: String,
-        trim: true,
-        match: [/^[\+]?[1-9][\d]{0,15}$/, 'Please provide a valid phone number']
+        trim: true
     },
     companyName: {
         type: String,
@@ -73,16 +72,13 @@ const userSchema = new mongoose.Schema({
     // Professional Information
     industryType: {
         type: String,
-        enum: ['hospital', 'clinic', 'billing-company', 'tpa', 'laboratory', 'other'],
-        default: 'other'
+        default: 'Other'
     },
     companySize: {
         type: String,
-        enum: ['1-10', '11-50', '51-200', '201-500', '500+'],
     },
     monthlyClaimsVolume: {
         type: String,
-        enum: ['<1000', '1000-5000', '5000-10000', '10000-50000', '50000+']
     },
     currentEHR: {
         type: String,
@@ -148,7 +144,6 @@ const userSchema = new mongoose.Schema({
     // Lead Source Tracking
     leadSource: {
         type: String,
-        enum: ['website', 'referral', 'social-media', 'advertisement', 'conference', 'other'],
         default: 'website'
     },
     referralCode: String,

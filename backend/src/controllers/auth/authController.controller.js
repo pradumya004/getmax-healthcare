@@ -86,6 +86,8 @@ export const registerUser = asyncHandler(async (req, res) => {
 
     // Generate JWT token
     const token = user.generateAuthToken();
+    console.log("Generated JWT token for new user:", token);
+    
 
     // Remove password from response
     const userResponse = user.toObject();
@@ -141,6 +143,7 @@ export const loginUser = asyncHandler(async (req, res) => {
 
     // Generate JWT token
     const token = user.generateAuthToken();
+    console.log("Generated JWT token for user login:", token);
 
     // Remove sensitive fields from response
     const userResponse = user.toObject();

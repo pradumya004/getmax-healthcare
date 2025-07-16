@@ -1,8 +1,8 @@
 // backend/server.js
 
 import app from "./src/app.js";
-import connectDB from "./src/config/database.js";
-import config from "./src/config/environment.js";
+import connectDB from "./src/config/database.config.js"
+import config from "./src/config/environment.config.js";
 import dotenv from 'dotenv';
 
 dotenv.config();
